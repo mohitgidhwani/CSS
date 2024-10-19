@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Assignment 2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* First Module Start */
+        .container1{
+            /* width: 80%; */
+            background: black;
+            /* margin: 100px auto; */
+            padding: 10px;
+            position: relative;
+        }
+
+      
+
+        .first-row{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax( 350px ,1fr));
+            gap: 10px;
+        }
+           
+           
+            
+        .first-col {
+            
+            height: 350px;
+            background: url(https://justifiedgrid.com//wp-content/gallery/life/flowers/129557180.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .second-col{
+            height: 350px;
+           
+            background: url(https://fooplugins.com/wp-content/uploads/2019/10/dandelion-Image-by-InspiredImages-from-Pixabay.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .second-row{
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+            gap: 10px;
+        }
+
+        .row-first{
+            height: 350px;
+            /* width: 400px; */
+            background: url(https://gratisography.com/wp-content/uploads/2024/03/gratisography-vr-glasses-800x525.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .row-second{
+            background: url(https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .row-thrid{
+            background: url(https://iso.500px.com/wp-content/uploads/2018/05/Blog-marketplace-getty500px-48429366-nologo-3000x2000.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .first-row{
+            margin-top: 10px;
+        }
+
+        .thrid-row{
+            background: url(https://images.pexels.com/photos/355508/pexels-photo-355508.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+            background-size: cover;
+            background-position: center; 
+        }
+
+        .fourth-row{
+            background: url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg);
+            background-size: cover;
+            background-position: center; 
+        }
+
+        .side-option{
+           
+            background: black;
+            color: white;
+            text-align: right;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 20px 30px;
+        }
+
+        .gallery-sc{
+            display: grid;
+            grid-template-columns: 2fr .5fr;
+            
+            width: 90%;
+            margin: auto;
+            background: lightgreen;
+        }
+
+        @media (max-width:500px)
+        {
+            .side-option{
+                display: none;
+            }
+
+           
+        }
+
+        .side-option h3{
+            margin-top: 60px;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+
+        .side-option a{
+            text-decoration: none;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            transition: .2s;
+        }
+
+        .side-option ul li{
+            margin-bottom: 20px;
+            list-style: none;
+        }
+
+        .side-option a:hover{
+            color: brown;
+        }
+
+        .side-option i{
+            padding: 15px 10px;
+        }
+
+
+
+        /* First Module end */
+
+        /* Second module start */
+        .container2 {
+            /* width: 100%; */
+            /* height: 900px; */
+            /* background: red; */
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            overflow: hidden;
+            position: relative;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+        }
+
+        @media (max-width:600px) {
+            .container2 {
+                height: 1000px;
+            }
+
+            /* .container2 h1{
+                text-align: center;
+            } */
+        }
+
+
+
+
+        .container2::after {
+            content: "";
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            position: absolute;
+
+
+        }
+
+        .hotballon {
+            width: 100%;
+            height: 900px;
+            background: url(https://images.pexels.com/photos/3389955/pexels-photo-3389955.jpeg);
+            background-size: cover;
+            /* background-attachment: fixed; */
+
+            position: relative;
+            z-index: 1;
+        }
+
+
+
+
+
+        .hotballon::after {
+            content: "";
+            width: 100%;
+            height: 900px;
+            background: rgba(0, 0, 0, 0.479);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .innerbox {
+            /* height: 800px; */
+            width: 90%;
+            /* background: lightblue; */
+            margin: auto;
+            /* position: absolute; */
+            /* top: 30px; */
+            left: 340px;
+            z-index: 2;
+        }
+
+        .nav1 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        .nav1 span {
+
+            padding: 0 10px;
+            color: black;
+            background: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+        }
+
+        .nav1 h1 {
+            scale: .7;
+            margin-left: 5px;
+            color: white;
+            border: 3px solid white;
+        }
+
+        .innerbox ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 20px;
+            position: relative;
+        }
+
+        .innerbox ul a:hover {
+            color: orangered;
+        }
+
+        .innerbox ul li::after {
+            content: "";
+            height: 5px;
+            width: 100%;
+            background: orangered;
+            position: absolute;
+            bottom: 7px;
+            left: -60px;
+            opacity: 0;
+            transition: .3s;
+            overflow: hidden;
+        }
+
+        .innerbox ul li:hover::after {
+            opacity: 1;
+            left: 0;
+
+        }
+
+
+
+
+        .innerbox a {
+            text-decoration: none;
+            color: white;
+            transition: .3s;
+        }
+
+
+        .centertext {
+            text-align: center;
+            margin-top: 150px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        .centertext p {
+            font-size: 20px;
+        }
+
+        .container2 h1 {
+            font-size: 50px;
+            letter-spacing: 5px;
+        }
+
+        .dotborder {
+
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .leftborder {
+            height: 5px;
+            width: 50px;
+            border-bottom: 2px solid white;
+        }
+
+        .dot {
+            padding-bottom: 25px;
+            padding-left: 12px;
+            padding-right: 8px;
+            color: orangered;
+            text-shadow: 0 0 5px orangered;
+        }
+
+        .rightborder {
+            height: 5px;
+            width: 50px;
+            border-bottom: 2px solid white;
+        }
+
+        .para {
+            width: 406px;
+            margin: auto;
+            text-align: center;
+            color: white;
+        }
+
+        .logobutton {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            text-align: center;
+            gap: 20px;
+
+        }
+
+        .logobutton button {
+            height: 50px;
+            width: 180px;
+            border: none;
+            background: transparent;
+            color: white;
+            font-weight: bolder;
+            transition: .3s;
+            border: 2px solid white;
+        }
+
+        .logobutton button:hover {
+            background: orangered;
+        }
+
+
+
+        .down {
+            height: 50px;
+            width: 50px;
+            background: white;
+            position: absolute;
+            bottom: -75px;
+            left: 590px;
+            border-radius: 100%;
+            transition: .3s;
+
+        }
+
+        .down i {
+            font-size: 20px;
+            display: block;
+            text-align: center;
+            line-height: 50px;
+            color: orangered;
+            transition: .3s;
+        }
+
+        .down i:hover {
+            padding-top: 10px;
+        }
+
+        .down:hover {
+            background: #999;
+        }
+
+        .leftsign {
+            height: 50px;
+            width: 50px;
+            background: #999;
+            position: absolute;
+            top: 320px;
+            left: 40px;
+            z-index: 2;
+            text-align: center;
+            line-height: 50px;
+            transition: .3s;
+        }
+
+        .leftsign:hover {
+            background: orangered;
+            color: white;
+        }
+
+
+        .rightsign {
+            height: 50px;
+            width: 50px;
+            background: #999;
+            position: absolute;
+            top: 320px;
+            right: 40px;
+            z-index: 2;
+            text-align: center;
+            line-height: 50px;
+            transition: .3s;
+        }
+
+        .rightsign:hover {
+            background: orangered;
+            color: white;
+        }
+
+        /* Second module end here */
+
+
+        /* third module start */
+        .container3 {
+            width: 62%;
+            background: rgb(12, 12, 12);
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .container3 .left-text {
+            width: 577px;
+            text-align: right;
+            padding: 50px;
+            color: rgb(187, 182, 182);
+        }
+
+        .left-text h3 {
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-right: 5px solid rgb(235, 77, 104);
+            padding-right: 10px;
+            margin-bottom: 40px;
+        }
+
+        .container3 span {
+            color: orangered;
+        }
+
+        .container3 i {
+            padding: 20px;
+            background: white;
+            border-radius: 50%;
+            margin-top: 40px;
+            margin-left: -20px;
+            color: orangered;
+
+        }
+
+        .icons-cont3 {
+            margin-top: 95px;
+
+        }
+
+        .container3 .right-img {
+            width: 583px;
+            height: 500px;
+
+            background: url(https://fps.cdnpk.net/images/home/subhome-ai.webp?w=649&h=649);
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* third module end */
+
+
+        /* fourth module start */
+        .container4 {
+            width: 70%;
+            /* height: 500px; */
+            background: lightblue;
+            margin: 100px auto;
+            position: relative;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+
+
+        .container4 h2 {
+            text-align: center;
+            padding-top: 30px;
+            font-weight: 600;
+        }
+
+        .container4 p {
+            text-align: center;
+        }
+
+        .container4 span {
+            display: block;
+            text-align: center;
+            font-size: 30px;
+            color: orangered;
+            position: relative;
+            /* border: 1px solid black; */
+            width: 200px;
+            margin: 30px auto;
+        }
+
+        .container4 span::after {
+            content: "";
+            position: absolute;
+            top: 24px;
+            left: 10px;
+            height: 5px;
+            width: 80px;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.575);
+        }
+
+        .container4 span::before {
+            content: "";
+            position: absolute;
+            top: 27px;
+            right: 10px;
+            height: 2px;
+            width: 80px;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.575);
+        }
+
+        .container4 .team-list {
+            position: relative;
+        }
+
+        .container4 .first-per {
+            height: 80px;
+            width: 80px;
+            background: url(https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            position: absolute;
+            top: 123px;
+            left: 250px;
+        }
+
+        .container4 .second-per {
+            height: 80px;
+            width: 80px;
+            background: url(https://media.istockphoto.com/id/468644664/photo/handsome-black-man-thinking.jpg?s=612x612&w=0&k=20&c=0iUiUXK1JoiLUtyNNOlZfEy9ZH5pbbzi5rEbnBhTQ6Y=);
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            position: absolute;
+            top: 125px;
+            left: 451px;
+        }
+
+        .container4 .third-per {
+            height: 80px;
+            width: 80px;
+            background: url(https://neweralive.na/wp-content/uploads/2024/06/lloyd-sikeba.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            position: absolute;
+            top: 147px;
+            left: 651px;
+        }
+
+        .container4 .fourth-per {
+            height: 80px;
+            width: 80px;
+            background: url(https://as1.ftcdn.net/v2/jpg/05/95/10/00/1000_F_595100071_xi2gSc6g9d4DC8sNuEW0uBPhNDwVs4Zb.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            position: absolute;
+            top: 123px;
+            left: 850px;
+        }
+
+
+        .container4 .fifth-per {
+            height: 80px;
+            width: 80px;
+            background: url(https://toppng.com/uploads/preview/happy-black-person-11531493747ib42obkabb.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            position: absolute;
+            top: 53px;
+            left: 1050px;
+        }
+
+        /* fourth module end */
+
+        /* fifth module start */
+
+        .container5 {
+            width: 80%;
+            /* background: lightblue; */
+            margin: 100px auto;
+        }
+
+        .thumbnail-cards {
+            width: 80%;
+            /* background: lightcyan; */
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .first-card {
+            width: 350px;
+            padding: 10px;
+            /* height: 450px; */
+            /* background: lightgreen; */
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+        }
+
+        .first-card img {
+            width: 100%;
+        }
+
+        .first-card button {
+            background: rgb(255, 208, 0);
+            border: none;
+            padding: 15px 25px;
+
+        }
+
+        /* fifth module end */
+
+        /* sixth module start */
+        .container6 {
+            width: 70%;
+            margin: 100px auto;
+            background: lightcoral;
+
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+
+        .header {
+            height: 50px;
+            width: 200px;
+            background: black;
+            color: white;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .menu {
+            height: 50px;
+            /* width: 600px; */
+            text-align: center;
+            background: rgba(255, 4, 4, 0.767);
+            line-height: 50px;
+            color: white;
+            flex-grow: 1;
+        }
+
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        .hero {
+            height: 300px;
+            width: 100%;
+            background: rgba(53, 56, 231, 0.63);
+            color: white;
+
+            text-align: center;
+            line-height: 300px;
+        }
+
+        .main .left {
+            height: 300px;
+            width: 500px;
+            background: rgb(20, 20, 190);
+            line-height: 300px;
+            color: white;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .main .image {
+            height: 150px;
+            width: 300px;
+            background: lightblue;
+            line-height: 150px;
+
+
+        }
+
+        .main .extra {
+            height: 150px;
+            width: 300px;
+            background: lightgreen;
+            line-height: 150px;
+        }
+
+        .banner2 {
+            display: none;
+            height: 70px;
+            width: 100%;
+            text-align: center;
+            line-height: 70px;
+            background: rgb(248, 248, 92);
+        }
+
+        .banner {
+            height: 70px;
+            width: 100%;
+            text-align: center;
+            line-height: 70px;
+            background: rgb(248, 248, 92);
+        }
+
+        .menu2{
+            display: none;
+        }
+
+
+
+        .tab-view {
+            display: block;
+        }
+
+
+        @media(max-width:991.98px) {
+            .menu {
+                display: none;
+            }
+
+            .header {
+                width: 100%;
+            }
+
+            .tab-view {
+                display: flex;
+            }
+
+            .menu2 {
+                display: block;
+                height: 520px;
+                width: 150px;
+                text-align: center;
+                background: rgba(255, 4, 4, 0.767);
+                line-height: 520px;
+                color: white;
+                flex-grow: 1;
+                display: block;
+            }
+
+            .main .left{
+                width: 532px;
+            }
+
+            .banner{
+                display: none;
+            }
+            .banner2{
+                display: block;
+            }
+
+            .right{
+                display: flex;
+            }
+            
+            .extra{
+                padding-right: 62px;
+            }
+        }
+
+        @media (max-width:575.98px) {
+            .container6 .header {
+                width: 100%;
+            }
+
+            .container6 .hero {
+                height: 200px;
+                line-height: 200px;
+            }
+
+            .container6 .main .left {
+                height: 150px;
+                line-height: 150px;
+            }
+
+            .banner {
+                display: none;
+            }
+
+            .main .banner2 {
+                display: block;
+
+            }
+
+            .main {
+                display: block;
+
+            }
+
+            .main .left {
+                width: 100%;
+                display: block;
+            }
+
+            .main .image {
+                width: 100%;
+                display: block;
+            }
+
+            .main .extra {
+                width: 100%;
+            }
+
+            .image {
+                background: rebeccapurple;
+            }
+
+
+            .container6 .menu2 {
+                display: none;
+            }
+
+            .container6 .right {
+                display: block;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .tab-view {
+                display: block;
+            }
+
+            .extra{
+                padding-right: 0;
+            }
+
+
+        }
+        /* sixth module end */
+        /* seven module start */
+
+
+        .container7 {
+            /* background: lightblue; */
+            width: 80%;
+            margin: 100px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .container7 .first-art,
+        .second-art {
+            width: 350px;
+            background: rgb(0, 225, 255);
+            padding: 10px;
+        }
+
+
+        .third-art {
+            width: 450px;
+            background: rgb(0, 225, 255);
+            padding: 10px;
+        }
+
+        .first-art h3,
+        .second-art h3 {
+            margin-bottom: 10px;
+        }
+
+        .third-art .full {
+            width: 100%;
+        }
+
+        .third-art button {
+            padding: 5px 25px;
+            display: block;
+        }
+
+        .third-art .line-btn {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .third-art .smile-btn {
+            /* display: flex; */
+            margin-bottom: 5px;
+            margin-left: 5px;
+        }
+
+        /* seven module end */
+
+
+
+        /* eighth module start */
+
+        .container8 {
+            width: 80%;
+            height: 500px;
+            margin: 100px auto;
+            /* background: lightblue; */
+            position: relative;
+        }
+
+        .container8 .small-crl {
+            position: absolute;
+            top: 45%;
+            left: 200px;
+            height: 50px;
+            width: 50px;
+            background: rgb(0, 225, 255);
+            border-radius: 50%;
+            animation: left-right 1s infinite alternate;
+        }
+
+        @keyframes left-right {
+            to {
+                transform: translate(200px, 0px);
+                scale: 3;
+            }
+        }
+
+
+        /* eighth module end */
+
+
+        /* ninth module start */
+
+        .container9 {
+            width: 70%;
+            height: 500px;
+            background: linear-gradient(rgba(255, 166, 0, 0.87), rgba(0, 0, 0, 0.808));
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .container9 .sun{
+            height: 250px;
+            width: 250px;
+            background: yellow;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .container9 .sun::after{
+            position: absolute;
+            content: "";
+            height: 230px;
+            width: 230px;
+            background: orange;
+            border-radius: 50%;
+        }
+
+        /* ninth module end */
+
+
+        
+    </style>
+</head>
+
+<body>
+    <!-- first module start -->
+    <h1 style="text-align: center; margin-top: 50px;"> (1)Image Gallery By Grid</h1>
+    <br>
+    <section class="gallery-sc">
+        <div class="container1">
+            <div class="photo-sec">
+                <div class="first-row">
+                    <div class="first-col"></div>
+                    <div class="second-col"></div>
+                </div>
+    
+                <div class="second-row">
+                    <div class="row-first "></div>
+                    <div class="row-first row-second"></div>
+                    <div class="row-first row-thrid"></div>
+                </div>
+    
+                <div class="first-row ">
+                    <div class="first-col thrid-row"></div>
+                    <div class="second-col fourth-row"></div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="side-option">
+            <h3>SHUTTER</h3>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">PHOTO</a></li>
+                <li><a href="">BIO</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google"></i>
+        </div>
+       
+       </section>
+
+    <!-- first module end -->
+
+    <!-- second module start -->
+    <h1 style="text-align: center; margin-top: 50px; margin-top: 100px;"> (2) Clip path module</h1>
+    <br>
+
+    <div class="container2">
+        <div class="leftsign">
+            <a href="#">
+                <i class="fa-solid fa-chevron-left"></i>
+            </a>
+        </div>
+        <div class="rightsign">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="hotballon">
+
+            <div class="innerbox">
+
+                <div class="nav1">
+
+                    <div>
+                        <h1><span>L</span>OgO</h1>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">ABOUT US</a></li>
+                            <li><a href="">PORTFOLIO</a></li>
+                            <li><a href="">PRICING</a></li>
+                            <li><a href="">TEAM</a></li>
+                            <li><a href="">BLOG</a></li>
+                            <li><a href="">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="centertext">
+                    <p>Our Clients Are Our First Priority</p>
+                    <h1>WELCOME TO SKY</h1>
+                </div>
+
+                <div class="dotborder">
+                    <div class="leftborder"></div>
+                    <h1 class="dot">.</h1>
+                    <div class="rightborder"></div>
+                </div>
+
+                <div class="para">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus veritatis numquam quidem
+                        facilis perspiciatis voluptatem incidunt deserunt eligendi officiis, impedit, ipsa itaque
+                        voluptas! Ex placeat alias quas, explicabo vero cum.</p>
+                </div>
+
+                <div class="logobutton">
+                    <div>
+                        <button>GET STARTED NOW</button>
+                    </div>
+                    <div>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+
+                <div class="down">
+                    <a href="#longtext">
+                        <i class="fa-solid fa-down-long"></i>
+                    </a>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <!-- second module end -->
+
+    <!-- third module start -->
+
+    <h1 style="text-align: center; margin-top: 100px;">(3)Multiple background Image </h1>
+
+    <div class="container3">
+        <div class="left-text">
+            <h3>OUR SERVICES</h3>
+
+            <span>WEB DESIGNE</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia error optio id dolores voluptatum eaque
+                corporis doloremque illum quidem dolorum.</p>
+
+            <span>PRINT DESIGNE</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia error optio id dolores voluptatum eaque
+                corporis doloremque illum quidem dolorum. </p>
+
+
+            <span>PHOTOGRAPHY</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia error optio id dolores voluptatum eaque
+                corporis doloremque illum quidem dolorum. </p>
+
+
+        </div>
+
+        <div class="right-img">
+            <div class="icons-cont3">
+                <i class="fa-solid fa-desktop"></i>
+                <br>
+                <i class="fa-solid fa-print"></i>
+                <br>
+                <i class="fa-solid fa-camera-retro"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- third module end -->
+
+
+    <!-- fourth module start -->
+    <h1 style="text-align: center; margin-top: 100px;">(4)Wave Mdoule </h1>
+    <br>
+    <div class="container4">
+        <h2>OUR TEAM</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+        <span>.</span>
+
+        <div class="team-list">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0099ff" fill-opacity=".5"
+                    d="M0,256L48,240C96,224,192,192,288,181.3C384,171,480,181,576,192C672,203,768,213,864,197.3C960,181,1056,139,1152,112C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+            <div class="first-per"></div>
+            <div class=" second-per"></div>
+            <div class="third-per"></div>
+            <div class="fourth-per"></div>
+            <div class="fifth-per"></div>
+        </div>
+
+
+    </div>
+
+
+    <!-- fourth module end -->
+
+
+
+    <!-- fifth module start -->
+    <h1 style="text-align: center; margin-top: 50px">(5) Layouts</h1>
+    <div class="container5">
+        <div class="thumbnail-cards">
+            <div class="first-card">
+                <img src="https://img.freepik.com/free-photo/modern-stationary-collection-arrangement_23-2149309643.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1728086400&semt=ais_hybrid"
+                    alt="">
+                <h3>Computer</h3>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nisi veniam consectetur
+                    quibusdam perspiciatis sequi voluptas nostrum obcaecati provident maiores?</p>
+                <br>
+                <button>See More</button> &nbsp &nbsp &nbsp <button>Buy Now</button>
+            </div>
+
+            <div class="first-card">
+                <img src="https://img.freepik.com/free-photo/modern-stationary-collection-arrangement_23-2149309643.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1728086400&semt=ais_hybrid"
+                    alt="">
+                <h3>Computer</h3>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nisi veniam consectetur
+                    quibusdam perspiciatis sequi voluptas nostrum obcaecati provident maiores?</p>
+                <br>
+                <button>See More</button> &nbsp &nbsp &nbsp <button>Buy Now</button>
+            </div>
+
+            <div class="first-card">
+                <img src="https://img.freepik.com/free-photo/modern-stationary-collection-arrangement_23-2149309643.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1728086400&semt=ais_hybrid"
+                    alt="">
+                <h3>Computer</h3>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nisi veniam consectetur
+                    quibusdam perspiciatis sequi voluptas nostrum obcaecati provident maiores?</p>
+                <br>
+                <button>See More</button> &nbsp &nbsp &nbsp <button>Buy Now</button>
+            </div>
+
+            <div class="first-card">
+                <img src="https://img.freepik.com/free-photo/modern-stationary-collection-arrangement_23-2149309643.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1728086400&semt=ais_hybrid"
+                    alt="">
+                <h3>Computer</h3>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nisi veniam consectetur
+                    quibusdam perspiciatis sequi voluptas nostrum obcaecati provident maiores?</p>
+                <br>
+                <button>See More</button> &nbsp &nbsp &nbsp <button>Buy Now</button>
+            </div>
+
+            <div class="first-card">
+                <img src="https://img.freepik.com/free-photo/modern-stationary-collection-arrangement_23-2149309643.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1728086400&semt=ais_hybrid"
+                    alt="">
+                <h3>Computer</h3>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nisi veniam consectetur
+                    quibusdam perspiciatis sequi voluptas nostrum obcaecati provident maiores?</p>
+                <br>
+                <button>See More</button> &nbsp &nbsp &nbsp <button>Buy Now</button>
+            </div>
+
+            <div class="first-card">
+                <img src="https://img.freepik.com/free-photo/modern-stationary-collection-arrangement_23-2149309643.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1728086400&semt=ais_hybrid"
+                    alt="">
+                <h3>Computer</h3>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nisi veniam consectetur
+                    quibusdam perspiciatis sequi voluptas nostrum obcaecati provident maiores?</p>
+                <br>
+                <button>See More</button> &nbsp &nbsp &nbsp <button>Buy Now</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- fifth module end -->
+    <!-- sixth module start -->
+    <h1 style="text-align: center; margin-top: 50px">(6) Media Query</h1>
+    <div class="container6">
+        <div class="nav">
+            <div class="header">HEADER</div>
+            <div class="menu">MENU</div>
+        </div>
+
+        <div class="hero">HERO</div>
+
+
+
+
+        <div class="tab-view">
+            <div>
+                <div class="menu2">MENU</div>
+            </div>
+            <div>
+                <div class="main">
+                    <div class="left">MAIN</div>
+                    <div class=" banner2">BANNER</div>
+                    <div class="right">
+                        <div class="image">IMAGE</div>
+                        <div class="extra">EXTRA</div>
+                    </div>
+                </div>
+
+                <div class="banner">BANNER</div>
+            </div>
+        </div>
+
+
+    </div>
+     <!-- sixth module end -->
+
+    <!-- seven module start -->
+    <h1 style="text-align: center; margin-top: 50px">(7) Box content flex</h1>
+
+
+    <div class="container7">
+        <div class="first-art">
+            <h3>First article</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum corrupti totam alias illo veniam
+                excepturi. Omnis beatae minima necessitatibus obcaecati placeat doloremque explicabo culpa, ut quo.
+                Reprehenderit illum accusantium repudiandae.</p>
+        </div>
+        <div class="second-art">
+            <h3>second article</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum corrupti totam alias illo veniam
+                excepturi. Omnis beatae minima necessitatibus obcaecati placeat doloremque explicabo culpa, ut quo.
+                Reprehenderit illum accusantium repudiandae.</p>
+        </div>
+        <div class="third-art">
+            <div class="line-btn">
+                <button class="smile-btn">Smile</button>
+                <button class="smile-btn">Laugh</button>
+                <button class="smile-btn">Wink</button>
+                <button class="smile-btn">Shrug</button>
+            </div>
+
+            <button class="full">Blush</button>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum corrupti totam alias illo veniam
+                excepturi. Omnis beatae minima necessitatibus obcaecati placeat doloremque explicabo culpa, ut quo.
+                Reprehenderit illum accusantium repudiandae.</p>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum corrupti totam alias illo veniam
+                excepturi. Omnis beatae minima necessitatibus obcaecati placeat doloremque explicabo culpa, ut quo.
+                Reprehenderit illum accusantium repudiandae.</p>
+        </div>
+
+
+    </div>
+
+    <!-- seven module end -->
+
+    <!-- eighth module start -->
+    <h1 style="text-align: center; margin-top: 50px">(8) CSS Transitions</h1>
+
+
+    <div class="container8">
+        <div class="small-crl"></div>
+    </div>
+
+    <!-- eighth module end -->
+
+
+    <!-- ninth module start -->
+
+    <h1 style="text-align: center; margin-top: 50px">(9) Sun</h1>
+
+    <div class="container9">
+        <div class="sun">
+
+        </div>
+    </div>
+
+    <!-- ninth module end -->
+
+
+</body>
+
+</html>
